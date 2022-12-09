@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { NavLink, Link } from "react-router-dom"
+import { NavLink, Link, useNavigate } from "react-router-dom"
 import "../components/styles/Login.css"
 
 function Login({onLogin}) {
     const [user, setUser] = useState("") 
     const [email, setEmail] = useState("");
     const [username, setUsername] = useState("");
+    const nav = useNavigate
 
 
     function handleSubmit(e){
@@ -20,6 +21,7 @@ function Login({onLogin}) {
         }).then((res) => {
             if (res.ok) {
                 res.json().then((user) => setUser(user));
+                nav("/home")
             }
         })
     }
@@ -57,7 +59,8 @@ function Login({onLogin}) {
         <div>
         <Link id="link" to={"/home"}>
           <span id="login-section"> Have an account already?  Login </span>
-        </Link></div>
+        </Link>
+        </div>
                 
                 <div className="login_link">
                     Not a member?
