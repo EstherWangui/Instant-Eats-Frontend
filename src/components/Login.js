@@ -25,7 +25,7 @@ function Login({onLogin}) {
             }
         })
     }
-
+    if(!user) nav("/signup")
     return (
         <div className='main-form'>
             <h1>Login</h1> 
@@ -58,7 +58,7 @@ function Login({onLogin}) {
         </button> */}
         <div>
         <Link id="link" to={"/home"}>
-          <span id="login-section"> Have an account already?  Login </span>
+          <span id="login-section"> Have an account already? Go to home </span>
         </Link>
         </div>
                 
