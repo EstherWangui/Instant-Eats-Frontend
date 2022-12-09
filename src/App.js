@@ -4,11 +4,13 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import SignUp from './components/SignUp'
 import Login from './components/Login';
+import Navbar from './components/NavBar';
 
 // function App() {
 
 function App() {
   const [user, setUser] = useState(null);
+  // const nav = useNavigate
 
   useEffect(() => {
     fetch("/me").then((response) => {
@@ -25,10 +27,10 @@ function App() {
   // function handleLogout() {
   //   setUser(null);
   // }
-
+  // if (!user) nav("/signup") 
   return(
     <div className='App'>
-      {/* <BrowserRouter> */}
+      <Navbar />
       <Routes>
         <Route path='/signup' element={<SignUp onLogin={setUser}/>}/>
       </Routes>
@@ -38,10 +40,7 @@ function App() {
       <Routes>
       <Route path="/home" element={<Home user={user}/>} />
       </Routes>
-      {/* </BrowserRouter> */}
-
-      {/* <Header user={user} onLogout={handleLogout} /> */}
-      {/* <Login /> */}
+      
     </div>
   )
 }
