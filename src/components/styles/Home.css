@@ -1,0 +1,7 @@
+.foodies {
+    margin: 0;
+    background-color: brown;
+    grid-template-columns: 100px, 100px;
+    align-items: baseline;
+
+}

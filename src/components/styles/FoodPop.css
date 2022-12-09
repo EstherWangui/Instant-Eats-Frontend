@@ -1,0 +1,36 @@
+.food_img{
+    box-sizing: border-box;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+    float: left;
+    width: 40%;
+    padding: 50px;
+    margin-left: 90px ;
+}
+
+.food_name{
+    max-width: 80%;
+    margin: 50px, 50px;
+    font-size: 20px;
+}
+
+.price{
+    display: none;
+}
+
+.food_img:hover + .price .description .review{
+    display: block;
+    color: fuchsia;
+    text-align: center;
+    max-width: 300px;
+}
+
+.description{
+    display: none;
+}
+
+.review{
+    display: none;
+}
