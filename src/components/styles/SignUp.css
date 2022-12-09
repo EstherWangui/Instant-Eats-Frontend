@@ -1,0 +1,84 @@
+.main-form
+{
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width:400px; height:420px;
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 0.836);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(32, 32, 32, 0.8),
+    inset 3px 3px 3px rgba(41, 41, 41, 0.9);
+}
+
+h1
+{
+    color: rgba(22, 22, 22, 0.973);
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+
+.inner-form
+{
+    position: relative;
+    border: none;
+    margin: 30px 0;
+}
+
+.inner-form > input
+{
+    width: 260px; height: 40px;
+    padding-left: 12px;
+    background: transparent;
+    font-size: 18px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    color: #000;
+    caret-color: rgb(218, 38, 92);
+}
+
+.main-form .login 
+{
+    cursor: pointer;
+    width: 220px; height:38px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background: rgb(255, 44, 79);
+    transition: -4s;
+}
+
+.main-form .login:hover
+{
+    background: rgb(21, 37, 68);
+}
+
+.signup_link, .login_link
+{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+}
+
+.signup_link a,
+.login_link a
+{
+    color: rgb(4, 20, 48);
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signup_link a:hover,
+.login_link a:hover
+{
+    text-decoration: underline;
+}
