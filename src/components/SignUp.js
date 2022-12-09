@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink , useNavigate} from "react-router-dom";
 // import "../css/anna.css"
 import "../components/styles/SignUp.css";
 
@@ -9,10 +9,11 @@ function SignUp({onLogin}) {
     const [email, setEmail ] = useState("")
     const [password, setPassword] = useState("");
     const [passwordConfirmation, setPasswordConfirmation] = useState("");
+    const nav = useNavigate()
 
     function submitHandler(e) {
         e.preventDefault()
-        fetch("https://instant-eats-production.up.railway.app/signup", {
+        fetch("/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -27,6 +28,7 @@ function SignUp({onLogin}) {
         }).then((res) => {
             if (res.ok) {
                 res.json().then((user) => onLogin(user));
+                nav("/login")
             }
         })
     }
