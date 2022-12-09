@@ -2,7 +2,7 @@
 import './Home.css'
 import React, { useEffect, useState } from 'react'
 // import FoodList from './FoodList';
-// import SignUp from './SignUp';
+import SignUp from './SignUp';
 import FoodPop from './FoodPop';
 
 function Home({user}) {
@@ -23,7 +23,7 @@ function Home({user}) {
     // ) : (
     //   <Link to='/signup'/>
     // )}
-    // if(!user) return <SignUp setUser={user}/>
+    if(!user) return <SignUp setUser={user}/>
   return (
     <div>
         {/* <FoodList foods={foods}/> */}
