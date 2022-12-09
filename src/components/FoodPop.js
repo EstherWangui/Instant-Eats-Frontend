@@ -1,4 +1,5 @@
 import React from 'react'
+import '../components/styles/FoodPop.css'
 
 function FoodPop({ id, name,price, food_url, review, description}) {
   return (
