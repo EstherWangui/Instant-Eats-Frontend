@@ -1,0 +1,23 @@
+.navbar{
+    max-width: 3000px;
+    height: 100%;
+    /* padding: 0 90rem; */
+    /* margin: auto; */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    font-size: 18px;
+    background-color: purple;
+}
+
+.landing-page h2{
+    font-size: 70px;
+    font-weight: 800;
+    background-image: url(https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHB1cnBsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60/rockets.png);
+    background-size: 250px;
+    background-repeat: repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

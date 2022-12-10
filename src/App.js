@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import SignUp from './components/SignUp'
 import Login from './components/Login';
 import Navbar from './components/NavBar';
+import About from './components/About';
 
 // function App() {
 
@@ -30,17 +31,21 @@ function App() {
   // if (!user) nav("/signup") 
   return(
     <div className='App'>
-      <Navbar />
       <Routes>
+
+      <Route path='/' element={<Navbar user={user}/>} />
+
         <Route path='/signup' element={<SignUp onLogin={setUser}/>}/>
-      </Routes>
-      <Routes>
+      {/* </Routes> */}
+      {/* <Routes> */}
         <Route path='/login' element={<Login onLogin={setUser}/>}/>
-      </Routes>
-      <Routes>
+      {/* </Routes> */}
+      {/* <Routes> */}
       <Route path="/home" element={<Home user={user}/>} />
+      {/* </Routes> */}
+      {/* <Routes> */}
+      <Route path="/about" element={<About user={user}/>} />
       </Routes>
-      
     </div>
   )
 }

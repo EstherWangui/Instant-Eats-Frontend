@@ -1,6 +1,5 @@
 import React from 'react'
-// import maleAvatart from '../../Images/male_avatar.jpg'
-import './about.css'
+import '../components/styles/about.css'
 
 function About() {
   return (
