@@ -27,6 +27,7 @@ function Login({onLogin}) {
     }
     if(!user) nav("/signup")
     return (
+        <div className="container">
         <div className='main-form'>
             <h1>Login</h1> 
 
@@ -67,6 +68,7 @@ function Login({onLogin}) {
                     <NavLink to="/signup">Signup</NavLink>
                 </div>
             </form>
+        </div>
         </div>
     )
 }

@@ -10,36 +10,31 @@ function NavBar({ onLogout }) {
     }
 
     return (
+      <div className="container">
         <div className="landing-page">
-      
-          <h2>You Need To Sign-Up or Login To View The Foods</h2>
+          <marquee behavior="" direction="right to left">You Need To Sign-Up or Login To View The Foods</marquee>
+
+          {/* <h2>You Need To Sign-Up or Login To View The Foods</h2> */}
           <nav className="navbar">
           <button>
-          <li className="nav-item">
             <Link to='/signup' className='nav-link'>SignUp</Link>
-            </li>
             </button>
 
-            <button>
-          <li className="nav-item">
+            <button>          
             <Link to='/login' className='nav-link'>Login</Link>
-            </li>
             </button>
           
-            <button>
-          <li className="nav-item">
+            <button>          
             <Link to='/home' className='nav-link'>Food</Link>
-            </li>
             </button>
 
             <button>
-            <li className="nav-item">
-          <Link to='/about' className='nav-link'>About</Link>
-        </li>
-        </button>
+            <Link to='/about' className='nav-link'>About</Link>
+            </button>
             
-        <button onClick={handleLogOut}>Logout</button>
+        <button  className='nav' onClick={handleLogOut}>Logout</button>
         </nav>
+      </div>
       </div>
     );
 }

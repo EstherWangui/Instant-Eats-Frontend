@@ -8,17 +8,20 @@
     align-items: center;
     font-size: 25px;
     font-weight: 600;
-    color: rgb(41, 24, 1);
+    color: red;
+    color: rgb(242, 19, 71);
 }
 
 body.dark .about_section {
     color: crimson;
+    font-size: 20px;
+    
 }
 
 #horizontal_line {
     width: 80%;
     height: 1px;
-    border: 1px solid lightgray;
+    border: 1px solid #c25555;
     margin-top: 20px;
 }
 
@@ -41,9 +44,25 @@ body.dark .about_section {
     flex-direction: column;
     line-height: 30px;
     justify-content: center; 
-    color: rgb(41, 24, 1);
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
     border-radius: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: #fa042db4 0px 1px 5px 0px;
+}
+
+.contained{
+    height: 795px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-nv7oQGAc96MljZ8SPbV_CfwtSD-CVkS2rveApKE9DO_XCKS-lQ5u69PdllbnODTUIqs&usqp=CAU");
+    background-size: 250px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Needed to position the navbar */
+    position: relative;
 }
 
 body.dark .about_info {

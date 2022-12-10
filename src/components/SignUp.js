@@ -34,7 +34,8 @@ function SignUp({onLogin}) {
     }
 
 return (
-    <div className='main-form'>
+    <div className="container">
+        <div className='main-form'>
         <h1> SignUp</h1> 
 
             <form onSubmit={submitHandler}>
@@ -88,12 +89,14 @@ return (
 
 
                 <div className="login_link">
-                    Already have an account
+                    Already have an account?
                     <NavLink to="/login">Login</NavLink>
                 </div>
 
             </form>
     </div>
+  </div>
+    
 )
 }
 export default SignUp;

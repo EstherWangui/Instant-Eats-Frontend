@@ -4,6 +4,7 @@ import '../components/styles/about.css'
 function About() {
   return (
     <>
+    <div className="contained">
     <div className='about_section'>
     <h3>About Us</h3>
     <hr id='horizontal_line' />
@@ -70,6 +71,7 @@ function About() {
         </div>
       </div>
       
+    </div>
     </div>
     
     </>

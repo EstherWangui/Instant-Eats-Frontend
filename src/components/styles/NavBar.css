@@ -1,3 +1,7 @@
+/* body{
+    background-image: url("https://www.shutterstock.com/image-photo/plate-isolated-on-white-background-600w-765136063.jpg");
+    background-size: 250px;
+} */
 .navbar{
     max-width: 3000px;
     height: 100%;
@@ -8,16 +12,80 @@
     justify-content: space-between;
     margin-top: 0px;
     font-size: 18px;
-    background-color: purple;
+    border-radius:  10px;
+
+    
+    /* background-color: crimson; */
 }
+.nav-link{
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+    background-color: crimson;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden;
+
+}
+marquee{
+    background-color: crimson;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px 5px;
+
+ }
 
 .landing-page h2{
     font-size: 70px;
     font-weight: 800;
-    background-image: url(https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHB1cnBsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60/rockets.png);
-    background-size: 250px;
+    /* background-image: url("https://images.unsplash.com/photo-1549490349-8643362247b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHB1cnBsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60/rockets.png");
+    background-size: 250px; */
     background-repeat: repeat;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+}
+.container{
+    height: 795px;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1478144592103-25e218a04891?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Zm9vZCUyMHdoaXRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: 250px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Needed to position the navbar */
+    position: relative;
+}
+/* .navlink Link{
+    float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}  */
+.nav{
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+    background-color: crimson;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    overflow: hidden;
+    border-color: #f2f2f2;
+    border-bottom-color: #f2f2f2;
 }
