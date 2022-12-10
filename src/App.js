@@ -14,7 +14,7 @@ function App() {
   // const nav = useNavigate
 
   useEffect(() => {
-    fetch("/me").then((response) => {
+    fetch("https://instant-eats-production.up.railway.app/me").then((response) => {
       if (response.ok) {
         response.json().then((user) => setUser(user));
       }

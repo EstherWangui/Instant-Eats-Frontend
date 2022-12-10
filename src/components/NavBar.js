@@ -4,7 +4,7 @@ import '../components/styles/NavBar.css'
 
 function NavBar({ onLogout }) {
     function handleLogOut(){
-        fetch("/logout", {
+        fetch("https://instant-eats-production.up.railway.app/logout", {
             method: "DELETE",
         }).then(() => onLogout());
     }
