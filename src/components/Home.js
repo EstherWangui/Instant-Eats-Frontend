@@ -3,7 +3,7 @@ import '../components/styles/Home.css'
 import React, { useEffect, useState } from 'react'
 // import SignUp from './SignUp';
 import FoodPop from './FoodPop';
-import { Link} from 'react-router-dom'
+// import { Link} from 'react-router-dom'
 
 function Home({user}) {
     const [foods, setFoods] = useState([]);
@@ -18,12 +18,12 @@ function Home({user}) {
     },[]);
     console.log(user)
 
-    {user? (
-      <Link to='/home' />
-    ) : (
-      <Link to='/signup'/>
-    )}
-    // if(!user) return <SignUp setUser={user}/>
+    // {user? (
+    //   <Link to='/home' />
+    // ) : (
+    //   <Link to='/signup'/>
+    // )}
+    // // if(!user) return <SignUp setUser={user}/>
   return (
     <div className='foodies'>
         {foods.map(foodSingle=>
