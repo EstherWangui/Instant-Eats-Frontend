@@ -1,7 +1,7 @@
 // import {  Link } from 'react-router-dom';
 import '../components/styles/Home.css'
 import React, { useEffect, useState } from 'react'
-// import SignUp from './SignUp';
+import SignUp from './SignUp';
 import FoodPop from './FoodPop';
 // import { Link} from 'react-router-dom'
 
@@ -16,14 +16,14 @@ function Home({user}) {
             .catch((err)=> console.log(err));
        
     },[]);
-    console.log(user)
+    // console.log(user)
 
     // {user? (
     //   <Link to='/home' />
     // ) : (
     //   <Link to='/signup'/>
     // )}
-    // // if(!user) return <SignUp setUser={user}/>
+     if(!user) return <SignUp setUser={user}/>
   return (
     <div className='foodies'>
         {foods.map(foodSingle=>
