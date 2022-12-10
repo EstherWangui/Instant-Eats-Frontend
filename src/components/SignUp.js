@@ -13,7 +13,7 @@ function SignUp({onLogin}) {
 
     function submitHandler(e) {
         e.preventDefault()
-        fetch("https://instant-eats-production.up.railway.app/signup", {
+        fetch("/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

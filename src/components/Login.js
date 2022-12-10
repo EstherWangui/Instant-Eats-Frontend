@@ -11,7 +11,7 @@ function Login({onLogin}) {
 
     function handleSubmit(e){
         e.preventDefault();
-        fetch("https://instant-eats-production.up.railway.app/login", {
+        fetch("/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
