@@ -10,7 +10,7 @@ function Home({user}) {
 
     useEffect(()=>{
         fetch("/foods")
-        .then((res)=> console.log(res))
+        .then((res)=> res.json())
         .then((foodInfo)=> {
             setFoods(foodInfo)})
             .catch((err)=> console.log(err));
@@ -24,6 +24,10 @@ function Home({user}) {
     //   <Link to='/signup'/>
     // )}
     // // if(!user) return <SignUp setUser={user}/>
+    if (!foods) {
+      return null
+    }
+    
   return (
     <div className='foodies'>
         {foods.map(foodSingle=>
