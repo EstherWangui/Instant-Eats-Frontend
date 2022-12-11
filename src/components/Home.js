@@ -9,7 +9,7 @@ function Home({user}) {
     const [foods, setFoods] = useState([]);
 
     useEffect(()=>{
-        fetch("/foods")
+        fetch("https://instant-eats-production.up.railway.app/foods")
         .then((res)=> res.json())
         .then((foodInfo)=> {
             setFoods(foodInfo)})
