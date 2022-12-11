@@ -47,11 +47,11 @@ import Stew from '../assets/Stew.jpg'
 function Home() {
   return (
      <div className='all-foods'>
-     <Link to='/about' className='nav-link'>about us</Link>
-              <h1>All-Inclusive Foods</h1>
-              <p>Fill your Tummy to the fullest</p>
+     <marquee behavior="" direction="right to left">      
+        <h3>All-Inclusive Foods, Choose Your Choice</h3>
+    </marquee>
               <div className="img-palour">
-
+              <Link to='/about' className='na-link' >about us</Link>
 
                 <div className="one_food">
                   <img  className="chick"src={Chicken} alt="/"/>

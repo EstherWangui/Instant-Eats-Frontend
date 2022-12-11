@@ -7,8 +7,8 @@ function About() {
     <>
     <div className="contained">
     <div className='about_section'>
-    <Link to='/signup' className='nav-link'>Become a Member</Link>
-    <Link to='/home' className='nav-link'>See our Food</Link>
+    <Link to='/signup' className='n-link'>Become a Member</Link>
+    <Link to='/home' className='link'>See our Food</Link>
     <h3>About Us</h3>
     <hr id='horizontal_line' />
     </div>

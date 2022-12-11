@@ -69,6 +69,40 @@ body.dark .about_info {
     color: antiquewhite;
 }
 
+.link{
+    font-size: 30px;
+    font-weight: 800;
+    overflow: hidden;
+    background-color: crimson;
+    float: right;
+    margin-left: 1240px;
+    padding-bottom: 20px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+    font-size: 17px; 
+    border-radius: 50px;
+    /* overflow: hidden; */
+}
+
+.n-link{
+    font-size: 30px;
+    font-weight: 800;
+    /* overflow: hidden; */
+    background-color: crimson;
+    /* float: right; */
+    margin-right: 740px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none;
+    font-size: 17px; 
+    border-radius: 50px;    
+}
+
 .names {
     font-weight: 600;
     color: crimson;
