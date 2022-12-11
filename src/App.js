@@ -42,9 +42,9 @@ function App() {
       {/* </Routes> */}
       {/* <Routes> */}
       <Route path="/home" element={<Home user={user}/>} />
+      <Route path="/about" element={<About user={user}/>} />
       {/* </Routes> */}
       {/* <Routes> */}
-      <Route path="/about" element={<About user={user}/>} />
       </Routes>
     </div>
   )

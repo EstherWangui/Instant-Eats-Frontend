@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../components/styles/about.css'
 
 function About() {
@@ -6,6 +7,8 @@ function About() {
     <>
     <div className="contained">
     <div className='about_section'>
+    <Link to='/signup' className='nav-link'>Become a Member</Link>
+    <Link to='/home' className='nav-link'>See our Food</Link>
     <h3>About Us</h3>
     <hr id='horizontal_line' />
     </div>

@@ -1,7 +1,41 @@
-.foodies {
-    margin: 0;
-    background-color: brown;
-    grid-template-columns: 100px, 100px;
-    align-items: baseline;
-
+.all-foods img{
+   height:300px;
+   width: 30%;
+   margin-left: 30px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   border-radius: 20px;
+   border: 2px solid crimson;
+   box-shadow: #fa042db4 0px 1px 2px 0px;
+   float: left;
+   display: block; 
+   /* width: 100%; */
+   /* height: auto; */
+      /* background-color: crimson; */
+   
 }
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: crimson; /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: monospace;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .image-palour{
+    position: relative;
+  }
+  .one_food:hover .overlay {
+    opacity: 1;
+  }
+  
