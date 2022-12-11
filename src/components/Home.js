@@ -10,7 +10,7 @@ function Home({user}) {
 
     useEffect(()=>{
         fetch("/foods")
-        .then((res)=>res.json())
+        .then((res)=> console.log(res))
         .then((foodInfo)=> {
             setFoods(foodInfo)})
             .catch((err)=> console.log(err));
